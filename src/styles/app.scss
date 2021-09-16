@@ -1,0 +1,18 @@
+// Abstract files
+@import 'abstracts/variables';
+
+// Core files
+@import 'core/reset';
+
+// Components
+@import 'components/buttons';
+
+// Layout
+@import 'layout/header';
+@import 'layout/footer';
+
+// Sections
+@import 'sections/hero';
+
+// Pages
+@import 'pages/home';
