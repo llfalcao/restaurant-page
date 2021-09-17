@@ -4,9 +4,19 @@
   box-sizing: border-box;
   text-decoration: none;
   border: 0;
+  list-style: none;
+  color: inherit;
+  font-size: $text-base-size;
 }
 
 body {
-  background-color: $dark-background;
-  color: $white-foreground;
+  background-color: $light-background;
+  color: $dark-foreground;
+  font-family: $font-family-system;
+}
+
+.container {
+  @media (min-width: 1200px) {
+    max-width: 1920px;
+  }
 }
