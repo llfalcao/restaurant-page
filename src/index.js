@@ -11,13 +11,30 @@ content.appendChild(Header());
 content.appendChild(Home());
 content.appendChild(Footer());
 
-// Toggle navbar border
-const navItem = document.querySelectorAll('#header a');
+// Load section according to the selected tab
+function loadSection(navbarLink) {
+  const header = document.querySelector('#header');
+  if (navbarLink === 'Menu') {
+    header.insertAdjacentElement('afterend', Menu());
+  } else if (navbarLink === 'Contact') {
+    header.insertAdjacentElement('afterend', Contact());
+  } else if (navbarLink === 'Home') {
+    header.insertAdjacentElement('afterend', Home());
+  }
+}
 
+// Toggle navbar bottom border and remove the
+// current section before loading the selected one
+const navItem = document.querySelectorAll('#header a');
 navItem.forEach((item) => {
   item.addEventListener('click', function () {
-    let current = document.querySelectorAll('.active');
-    current[0].classList.remove('active');
+    let currentTab = document.querySelectorAll('.active');
+    let currentSection = document.querySelector(currentTab[0].hash);
+    currentTab[0].classList.remove('active');
+    if (currentSection !== null) {
+      currentSection.remove();
+    }
     item.classList.add('active');
+    loadSection(item.innerText);
   });
 });
