@@ -7,6 +7,7 @@
   list-style: none;
   color: inherit;
   font-size: $text-base-size;
+  line-height: 1;
 }
 
 body {
@@ -15,8 +16,10 @@ body {
   font-family: $font-family-system;
 }
 
-.container {
+#content {
   @media (min-width: 1200px) {
     max-width: 1920px;
+    margin: auto;
+    border: 1px solid gray;
   }
 }

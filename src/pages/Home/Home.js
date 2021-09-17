@@ -1,13 +1,10 @@
-import hero from '../../assets/eggs-benedict.jpg';
+import Hero from '../../components/Hero';
 
 const Home = function () {
   const home = document.createElement('div');
   home.id = 'home';
 
-  const heroImg = new Image();
-  heroImg.src = hero;
-
-  home.appendChild(heroImg);
+  home.appendChild(Hero());
 
   return home;
 };

@@ -1,5 +1,22 @@
 #header {
-  width: 100%; //temp
+  & .company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    & img {
+      width: 80px;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    & span {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  }
+
   & ul {
     display: flex;
     justify-content: center;
