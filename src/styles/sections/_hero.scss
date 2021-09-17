@@ -14,10 +14,19 @@
     left: 0;
     transform: translateY(50%);
     color: $white-foreground;
-    text-shadow: 0 4px 4px #333;
+    text-shadow: $text-shadow-img;
     text-align: right;
     font-size: 4.5rem;
     font-weight: 600;
     max-width: 500px;
+  }
+
+  & span {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    color: $white-foreground;
+    font-weight: 600;
+    text-shadow: $text-shadow-img;
   }
 }

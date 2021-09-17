@@ -16,7 +16,7 @@
   \**********************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"* {\\n  margin: 0;\\n  padding: 0;\\n  box-sizing: border-box;\\n  text-decoration: none;\\n  border: 0;\\n  list-style: none;\\n  color: inherit;\\n  font-size: 16px;\\n  line-height: 1;\\n}\\n\\nbody {\\n  background-color: #eee;\\n  color: #101112;\\n  font-family: -apple-system, BlinkMacSystemFont, \\\"Segoe UI\\\", Roboto, Oxygen, Ubuntu, Cantarell, \\\"Fira Sans\\\", \\\"Droid Sans\\\", \\\"Helvetica Neue\\\", sans-serif;\\n}\\n\\n@media (min-width: 1200px) {\\n  #content {\\n    max-width: 1920px;\\n    margin: auto;\\n    border: 1px solid gray;\\n  }\\n}\\n\\n#header .company {\\n  display: flex;\\n  justify-content: center;\\n  align-items: center;\\n  gap: 1rem;\\n}\\n#header .company img {\\n  width: 80px;\\n  padding-top: 1rem;\\n  padding-bottom: 1rem;\\n}\\n#header .company span {\\n  font-size: 2rem;\\n  font-weight: 600;\\n}\\n#header ul {\\n  display: flex;\\n  justify-content: center;\\n}\\n#header a {\\n  display: block;\\n  width: 150px;\\n  padding-top: 0.4rem;\\n  padding-bottom: 0.6rem;\\n  text-align: center;\\n  font-weight: 600;\\n  border-bottom: 0.25rem solid transparent;\\n  transition: 0.3s;\\n}\\n#header a:hover {\\n  background-color: #ddd;\\n}\\n#header .active {\\n  border-bottom: 0.25rem solid #101112;\\n}\\n\\n.hero {\\n  width: 100%;\\n  height: 500px;\\n  overflow: hidden;\\n  object-fit: cover;\\n  position: relative;\\n  display: flex;\\n  justify-content: center;\\n  align-items: center;\\n}\\n.hero h1 {\\n  position: absolute;\\n  bottom: 50%;\\n  left: 0;\\n  transform: translateY(50%);\\n  color: #fff;\\n  text-shadow: 0 4px 4px #333;\\n  text-align: right;\\n  font-size: 4.5rem;\\n  font-weight: 600;\\n  max-width: 500px;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://resturant-page/./src/styles/app.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"* {\\n  margin: 0;\\n  padding: 0;\\n  box-sizing: border-box;\\n  text-decoration: none;\\n  border: 0;\\n  list-style: none;\\n  color: inherit;\\n  font-size: 16px;\\n  line-height: 1;\\n}\\n\\nbody {\\n  background-color: #eee;\\n  color: #101112;\\n  font-family: -apple-system, BlinkMacSystemFont, \\\"Segoe UI\\\", Roboto, Oxygen, Ubuntu, Cantarell, \\\"Fira Sans\\\", \\\"Droid Sans\\\", \\\"Helvetica Neue\\\", sans-serif;\\n}\\n\\n@media (min-width: 1200px) {\\n  #content {\\n    max-width: 1920px;\\n    margin: auto;\\n    border: 1px solid gray;\\n  }\\n}\\n\\n#header .company {\\n  display: flex;\\n  justify-content: center;\\n  align-items: center;\\n  gap: 1rem;\\n}\\n#header .company img {\\n  width: 80px;\\n  padding-top: 1rem;\\n  padding-bottom: 1rem;\\n}\\n#header .company span {\\n  font-size: 2rem;\\n  font-weight: 600;\\n}\\n#header ul {\\n  display: flex;\\n  justify-content: center;\\n}\\n#header a {\\n  display: block;\\n  width: 150px;\\n  padding: 0.6rem 0;\\n  text-align: center;\\n  font-weight: 600;\\n  border-bottom: 0.25rem solid transparent;\\n  transition: 0.3s;\\n}\\n#header a:hover {\\n  background-color: #ddd;\\n}\\n#header .active {\\n  border-bottom: 0.25rem solid #101112;\\n}\\n\\n.hero {\\n  width: 100%;\\n  height: 500px;\\n  overflow: hidden;\\n  object-fit: cover;\\n  position: relative;\\n  display: flex;\\n  justify-content: center;\\n  align-items: center;\\n}\\n.hero h1 {\\n  position: absolute;\\n  bottom: 50%;\\n  left: 0;\\n  transform: translateY(50%);\\n  color: #fff;\\n  text-shadow: 0 4px 4px #333;\\n  text-align: right;\\n  font-size: 4.5rem;\\n  font-weight: 600;\\n  max-width: 500px;\\n}\\n.hero span {\\n  position: absolute;\\n  bottom: 0.5rem;\\n  right: 0.5rem;\\n  color: #fff;\\n  font-weight: 600;\\n  text-shadow: 0 4px 4px #333;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://resturant-page/./src/styles/app.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -146,7 +146,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _assets_eggs_benedict_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../assets/eggs-benedict.jpg */ \"./src/assets/eggs-benedict.jpg\");\n/* harmony import */ var _assets_sam_moqadam_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/sam-moqadam.jpg */ \"./src/assets/sam-moqadam.jpg\");\n/* harmony import */ var _assets_sam_moqadam_2_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/sam-moqadam-2.jpg */ \"./src/assets/sam-moqadam-2.jpg\");\n/* harmony import */ var _assets_louis_hansel_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/louis-hansel.jpg */ \"./src/assets/louis-hansel.jpg\");\n\n\n\n\n\nconst Hero = function () {\n  const hero = document.createElement('div');\n  hero.classList.add('hero');\n  const bgImage = new Image();\n  bgImage.src = _assets_louis_hansel_jpg__WEBPACK_IMPORTED_MODULE_3__;\n\n  const tagline = document.createElement('h1');\n  tagline.textContent = 'Cooked to perfection';\n\n  hero.appendChild(bgImage);\n  hero.appendChild(tagline);\n  return hero;\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Hero);\n\n\n//# sourceURL=webpack://resturant-page/./src/components/Hero/Hero.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _assets_louis_hansel_beef_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../assets/louis-hansel-beef.jpg */ \"./src/assets/louis-hansel-beef.jpg\");\n\n\nconst Hero = function () {\n  const hero = document.createElement('div');\n  hero.classList.add('hero');\n\n  const bgImage = new Image();\n  bgImage.src = _assets_louis_hansel_beef_jpg__WEBPACK_IMPORTED_MODULE_0__;\n\n  const tagline = document.createElement('h1');\n  tagline.textContent = 'Cooked to perfection';\n\n  const imageCredits = `\n    <span\n      >Photo by\n      <a\n        href=\"https://unsplash.com/photos/oyUqUV1Q0Zg\"\n        alt=\"Louis Hansen\"\n        target=\"_blank\"\n        >Louis Hansen\n      </a>\n      on\n      <a href=\"https://unsplash.com\" alt=\"Unsplash\" target=\"_blank\"> Unsplash </a>\n    </span>\n\n`;\n\n  hero.appendChild(bgImage);\n  hero.appendChild(tagline);\n  hero.insertAdjacentHTML('beforeend', imageCredits);\n  return hero;\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Hero);\n\n\n//# sourceURL=webpack://resturant-page/./src/components/Hero/Hero.js?");
 
 /***/ }),
 
@@ -230,43 +230,13 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/assets/eggs-benedict.jpg":
-/*!**************************************!*\
-  !*** ./src/assets/eggs-benedict.jpg ***!
-  \**************************************/
+/***/ "./src/assets/louis-hansel-beef.jpg":
+/*!******************************************!*\
+  !*** ./src/assets/louis-hansel-beef.jpg ***!
+  \******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"b954514f66625f6b2d67.jpg\";\n\n//# sourceURL=webpack://resturant-page/./src/assets/eggs-benedict.jpg?");
-
-/***/ }),
-
-/***/ "./src/assets/louis-hansel.jpg":
-/*!*************************************!*\
-  !*** ./src/assets/louis-hansel.jpg ***!
-  \*************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"07fbb3e2a28d7488ecf6.jpg\";\n\n//# sourceURL=webpack://resturant-page/./src/assets/louis-hansel.jpg?");
-
-/***/ }),
-
-/***/ "./src/assets/sam-moqadam-2.jpg":
-/*!**************************************!*\
-  !*** ./src/assets/sam-moqadam-2.jpg ***!
-  \**************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"70c1418d9b070b7487dd.jpg\";\n\n//# sourceURL=webpack://resturant-page/./src/assets/sam-moqadam-2.jpg?");
-
-/***/ }),
-
-/***/ "./src/assets/sam-moqadam.jpg":
-/*!************************************!*\
-  !*** ./src/assets/sam-moqadam.jpg ***!
-  \************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"aa08fb2b115f444e1ae0.jpg\";\n\n//# sourceURL=webpack://resturant-page/./src/assets/sam-moqadam.jpg?");
+eval("module.exports = __webpack_require__.p + \"07fbb3e2a28d7488ecf6.jpg\";\n\n//# sourceURL=webpack://resturant-page/./src/assets/louis-hansel-beef.jpg?");
 
 /***/ })
 
