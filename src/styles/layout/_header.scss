@@ -19,6 +19,8 @@
 .navbar {
   display: flex;
   justify-content: center;
+  position: relative;
+  margin-bottom: 0.25rem;
 
   & a {
     display: block;
@@ -26,15 +28,20 @@
     padding: 0.6rem 0;
     text-align: center;
     font-weight: 600;
-    border-bottom: 0.25rem solid transparent;
     transition: $fast-transition;
   }
 
-  & a:hover {
-    background-color: $light-gray;
+  & .active {
+    color: #da7803;
   }
 
-  & .active {
-    border-bottom: 0.25rem solid $dark-background;
+  & .indicator {
+    position: absolute;
+    bottom: -0.25rem;
+    width: 150px;
+    height: 0.25rem;
+    background-color: #da7803;
+    transform: translateX(-150px);
+    transition: $fast-transition;
   }
 }

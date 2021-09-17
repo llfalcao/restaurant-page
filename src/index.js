@@ -14,12 +14,17 @@ content.appendChild(Footer());
 // Load section according to the selected tab
 function loadSection(navbarLink) {
   const header = document.querySelector('#header');
+  const indicator = document.querySelector('.indicator');
+
   if (navbarLink === 'Menu') {
     header.insertAdjacentElement('afterend', Menu());
+    indicator.style.transform = 'translateX(0px)';
   } else if (navbarLink === 'Contact') {
     header.insertAdjacentElement('afterend', Contact());
+    indicator.style.transform = 'translateX(150px)';
   } else if (navbarLink === 'Home') {
     header.insertAdjacentElement('afterend', Home());
+    indicator.style.transform = 'translateX(-150px)';
   }
 }
 
@@ -30,6 +35,7 @@ navItem.forEach((item) => {
   item.addEventListener('click', function () {
     let currentTab = document.querySelectorAll('.active');
     let currentSection = document.querySelector(currentTab[0].hash);
+
     currentTab[0].classList.remove('active');
     if (currentSection !== null) {
       currentSection.remove();

@@ -17,6 +17,7 @@ const Header = function () {
 
   const navbar = `
     <ul class="navbar">
+      <div class="indicator"></div>
       <li><a class="active" href="#home" alt="Home">Home</a></li>
       <li><a href="#menu" alt="Menu">Menu</a></li>
       <li><a href="#contact" alt="Contact">Contact</a></li>
