@@ -1,6 +1,10 @@
-const MenuCategory = function (title, type, image) {
+const MenuCategory = function (title, type, image, className) {
   const category = document.createElement('div');
   category.classList.add('category');
+
+  if (className) {
+    category.classList.add(className);
+  }
 
   const categoryImage = new Image();
   categoryImage.src = image;
@@ -16,7 +20,8 @@ const MenuCategory = function (title, type, image) {
   dishes.classList.add('dishes');
   dishes.appendChild(categoryTitle);
 
-  const items = JSON.parse(JSON.stringify(type.appetizers));
+  const items = type[Object.keys(type)[0]];
+
   for (let dish in items) {
     const menuItemWrapper = document.createElement('div');
     const name = document.createElement('span');

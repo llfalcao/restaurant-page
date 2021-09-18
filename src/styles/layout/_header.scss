@@ -32,7 +32,7 @@
   }
 
   & .active {
-    color: #da7803;
+    color: $orange;
   }
 
   & .indicator {
@@ -40,7 +40,7 @@
     bottom: -0.25rem;
     width: 150px;
     height: 0.25rem;
-    background-color: #da7803;
+    background-color: $orange;
     transform: translateX(-150px);
     transition: $fast-transition;
   }

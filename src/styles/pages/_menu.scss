@@ -10,6 +10,8 @@
   border-radius: 0.25rem;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 0px 4px rgba(0, 0, 0, 0.1);
   padding: 1rem 1rem 1.5rem;
+  margin-bottom: 3rem;
+  background-color: $light-gray;
 
   & .image-wrapper {
     position: absolute;
@@ -19,12 +21,15 @@
     left: -1rem;
     overflow: hidden;
     box-shadow: $box-shadow-base;
+    border-radius: 0.25rem;
   }
 
   & img {
-    width: 150%;
+    width: 130%;
     height: 100%;
     object-fit: cover;
+    object-position: center 100%;
+    margin-left: -5%;
   }
 
   & .dishes {
@@ -34,6 +39,7 @@
 
   & h2 {
     font-size: $menu-category-title;
+    color: $orange;
   }
 
   & .menu-item-wrapper {

@@ -1,0 +1,24 @@
+{
+  "soups": [
+    {
+      "name": "Chicken Soup with Pasta and Spinach",
+      "price": "$14"
+    },
+    {
+      "name": "Tomatillo Zucchini White Bean Chili",
+      "price": "$15"
+    },
+    {
+      "name": "Thai Shrimp Soup",
+      "price": "$16"
+    },
+    {
+      "name": "Pumpkin Tortilla Soup",
+      "price": "$13"
+    },
+    {
+      "name": "Vegetarian Pho",
+      "price": "$14"
+    }
+  ]
+}
