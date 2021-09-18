@@ -34,8 +34,9 @@ const navItem = document.querySelectorAll('#header a');
 navItem.forEach((item) => {
   item.addEventListener('click', function () {
     let currentTab = document.querySelectorAll('.active');
-    let currentSection = document.querySelector(currentTab[0].hash);
-
+    let currentSection = document.querySelector(
+      '#' + currentTab[0].dataset.page
+    );
     currentTab[0].classList.remove('active');
     if (currentSection !== null) {
       currentSection.remove();
