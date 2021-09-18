@@ -1,0 +1,48 @@
+#menu {
+  padding: 2rem;
+}
+
+.category {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  position: relative;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 0px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 1rem 1.5rem;
+
+  & .image-wrapper {
+    position: absolute;
+    width: 40%;
+    height: 90%;
+    top: -1rem;
+    left: -1rem;
+    overflow: hidden;
+    box-shadow: $box-shadow-base;
+  }
+
+  & img {
+    width: 150%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  & .dishes {
+    width: 100%;
+    margin-left: 40%;
+  }
+
+  & h2 {
+    font-size: $menu-category-title;
+  }
+
+  & .menu-item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25rem 0.5rem 0 0;
+  }
+
+  & span {
+    font-size: 0.9rem;
+  }
+}

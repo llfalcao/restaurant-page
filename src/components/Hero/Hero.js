@@ -1,4 +1,4 @@
-import beef from '../../assets/louis-hansel-beef.jpg';
+import beef from '../../assets/images/louis-hansel-beef.jpg';
 
 const Hero = function () {
   const hero = document.createElement('div');
@@ -11,16 +11,12 @@ const Hero = function () {
   tagline.textContent = 'Cooked to perfection';
 
   const imageCredits = `
-    <span
-      >Photo by
-      <a
-        href="https://unsplash.com/photos/oyUqUV1Q0Zg"
-        alt="Louis Hansen"
-        target="_blank"
-        >Louis Hansen
-      </a>
+    <span>
+      Photo by
+      <a href="https://unsplash.com/photos/oyUqUV1Q0Zg" alt="Louis Hansen" target="_blank">
+        Louis Hansen</a>
       on
-      <a href="https://unsplash.com" alt="Unsplash" target="_blank"> Unsplash </a>
+      <a href="https://unsplash.com" alt="Unsplash" target="_blank">Unsplash</a>
     </span>
 
 `;
