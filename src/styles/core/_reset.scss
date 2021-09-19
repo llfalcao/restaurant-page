@@ -13,7 +13,8 @@
 body {
   background-color: $light-background;
   color: $dark-foreground;
-  font-family: $font-family-system;
+  font-family: $font-family-sans, $font-family-system;
+  width: calc(100vw - 18px);
 }
 
 #content {

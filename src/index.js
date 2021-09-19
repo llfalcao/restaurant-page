@@ -34,6 +34,7 @@ const navItem = document.querySelectorAll('#header a');
 navItem.forEach((item) => {
   item.addEventListener('click', function () {
     let currentTab = document.querySelectorAll('.active');
+    if (currentTab[0] === item) return;
     let currentSection = document.querySelector(
       '#' + currentTab[0].dataset.page
     );
