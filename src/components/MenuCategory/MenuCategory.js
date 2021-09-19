@@ -1,29 +1,30 @@
 // Creates category container with desired class(es)
-const MenuCategory = function (title, type, image, classNames) {
-  const category = document.createElement('div');
-  category.classList.add('category');
-  if (classNames != null) {
-    if (typeof classNames === 'object') {
-      category.classList.add(...classNames);
-    } else {
-      category.classList.add(classNames);
-    }
-  }
+const MenuCategory = function (info, type, categoryImage, classes) {
+  const image = new Image();
+  image.src = categoryImage;
 
-  const categoryImage = new Image();
-  categoryImage.src = image;
-
-  const imageWrapper = document.createElement('div');
-  imageWrapper.classList.add('image-wrapper');
-  imageWrapper.appendChild(categoryImage);
+  const imageCredits = `
+  <span class="credits">
+    Photo by
+    <a href="${info.source}" alt="${info.author}" target="_blank">
+      ${info.author}</a>
+    on
+    <a href="https://unsplash.com" alt="Unsplash" target="_blank">Unsplash</a>
+  </span>
+`;
 
   const categoryTitle = document.createElement('h2');
-  categoryTitle.innerText = title;
+  categoryTitle.innerText = info.category;
 
   const overlay = document.createElement('div');
   overlay.classList.add('text-overlay');
   overlay.appendChild(categoryTitle);
+
+  const imageWrapper = document.createElement('div');
+  imageWrapper.classList.add('image-wrapper');
+  imageWrapper.appendChild(image);
   imageWrapper.appendChild(overlay);
+  imageWrapper.insertAdjacentHTML('beforeend', imageCredits);
 
   const dishes = document.createElement('div');
   dishes.classList.add('dishes');
@@ -47,8 +48,33 @@ const MenuCategory = function (title, type, image, classNames) {
     dishes.appendChild(menuItemWrapper);
   }
 
+  const category = document.createElement('div');
+  category.id = info.category.toLowerCase();
+  category.classList.add('category');
+  if (classes != null) {
+    if (typeof classes === 'object') {
+      category.classList.add(...classes);
+    } else {
+      category.classList.add(classes);
+    }
+  }
   category.appendChild(imageWrapper);
   category.appendChild(dishes);
+
+  ['mouseover', 'mouseleave'].forEach((event) =>
+    imageWrapper.addEventListener(
+      event,
+      function showCredits(e) {
+        const credits = document.querySelector(`#${category.id} .credits`);
+        if (e.type === 'mouseover') {
+          credits.classList.add('visible');
+        } else {
+          credits.classList.remove('visible');
+        }
+      },
+      false
+    )
+  );
 
   return category;
 };

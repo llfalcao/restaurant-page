@@ -1,0 +1,27 @@
+{
+  "appetizers": {
+    "category": "Appetizers",
+    "author": "Louis Hansel",
+    "source": "https://unsplash.com/photos/wOISTbCpUCc"
+  },
+  "salads": {
+    "category": "Salads",
+    "author": "Jonathan Ybema",
+    "source": "https://unsplash.com/photos/r8A-FTlLY3c"
+  },
+  "soups": {
+    "category": "Soups",
+    "author": "Max Griss",
+    "source": "https://unsplash.com/photos/YpfRCe5lda0"
+  },
+  "specials": {
+    "category": "Specials",
+    "author": "Davide Cantelli",
+    "source": "https://unsplash.com/photos/jpkfc5_d-DI"
+  },
+  "beverages": {
+    "category": "Beverages",
+    "author": "Des Récits",
+    "source": "https://unsplash.com/photos/NaKwyyh849o"
+  }
+}

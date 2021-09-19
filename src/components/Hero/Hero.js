@@ -1,29 +1,46 @@
-import beef from '../../assets/images/louis-hansel-beef.jpg';
+import fish from '../../assets/images/caroline-attwood-hero.jpg';
 
 const Hero = function () {
-  const hero = document.createElement('div');
-  hero.classList.add('hero');
+  const overlay = document.createElement('div');
+  overlay.classList.add('overlay');
 
   const bgImage = new Image();
-  bgImage.src = beef;
+  bgImage.src = fish;
 
   const tagline = document.createElement('h1');
-  tagline.textContent = 'Cooked to perfection';
+  tagline.innerText = 'Cooked to perfection';
 
   const imageCredits = `
-    <span>
-      Photo by
-      <a href="https://unsplash.com/photos/oyUqUV1Q0Zg" alt="Louis Hansen" target="_blank">
-        Louis Hansen</a>
-      on
-      <a href="https://unsplash.com" alt="Unsplash" target="_blank">Unsplash</a>
-    </span>
+      <span class="credits">
+        Photo by
+        <a href="https://unsplash.com/photos/bpPTlXWTOvg" alt="Caroline Attwood" target="_blank">
+          Caroline Attwood</a>
+        on
+        <a href="https://unsplash.com" alt="Unsplash" target="_blank">Unsplash</a>
+      </span>
+  `;
 
-`;
-
-  hero.appendChild(bgImage);
+  const hero = document.createElement('div');
+  hero.classList.add('hero');
+  hero.appendChild(overlay);
   hero.appendChild(tagline);
   hero.insertAdjacentHTML('beforeend', imageCredits);
+
+  ['mouseover', 'mouseleave'].forEach((event) =>
+    hero.addEventListener(
+      event,
+      function showCredits(e) {
+        const credits = document.querySelector('.hero .credits');
+        if (e.type === 'mouseover') {
+          credits.classList.add('visible');
+        } else {
+          credits.classList.remove('visible');
+        }
+      },
+      false
+    )
+  );
+
   return hero;
 };
 
