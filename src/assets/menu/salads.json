@@ -1,23 +1,23 @@
 {
   "salads": [
     {
-      "name": "Shredded Brussels Sprout Salad",
-      "price": "$13"
+      "name": "Chicken Salad",
+      "price": "$10"
     },
     {
-      "name": "Rainbow Orzo Salad",
-      "price": "$17"
+      "name": "Shredded Brussels Sprout Salad",
+      "price": "$12"
     },
     {
       "name": "Cherry Tomato Couscous Salad",
-      "price": "$14"
-    },
-    {
-      "name": "Chicken Salad",
       "price": "$12"
     },
     {
       "name": "Citrus Shrimp Ceviche",
+      "price": "$15"
+    },
+    {
+      "name": "Rainbow Orzo Salad",
       "price": "$15"
     }
   ]

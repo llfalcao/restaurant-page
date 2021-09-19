@@ -1,0 +1,40 @@
+{
+  "specials": [
+    {
+      "name": "Spring Risotto",
+      "price": "$20"
+    },
+    {
+      "name": "Tomato and Roasted Garlic Pie",
+      "price": "$25"
+    },
+    {
+      "name": "Cashew Chicken Curry",
+      "price": "$30"
+    },
+    {
+      "name": "Spicy Lobster Pasta",
+      "price": "$35"
+    },
+    {
+      "name": "Grilled Scallops with Creamed Corn",
+      "price": "$38"
+    },
+    {
+      "name": "Sole Meuniere with Rice Pilaf",
+      "price": "$45"
+    },
+    {
+      "name": "Cedar-Plank Salmon",
+      "price": "$50"
+    },
+    {
+      "name": "Grilled Pork Spareribs With Soda Bottle Barbecue Sauce",
+      "price": "$65"
+    },
+    {
+      "name": "Pork Chops with Fig and Grape Agrodolce",
+      "price": "$80"
+    }
+  ]
+}

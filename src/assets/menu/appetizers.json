@@ -2,22 +2,22 @@
   "appetizers": [
     {
       "name": "Buffalo Chicken Wings",
+      "price": "$5"
+    },
+    {
+      "name": "Mini Pizzas",
+      "price": "$5"
+    },
+    {
+      "name": "Orange-Glazed Meatballs",
+      "price": "$7"
+    },
+    {
+      "name": "Curried Coronation Chicken Salad",
       "price": "$7"
     },
     {
       "name": "Crab Cakes with Horseradish Cream",
-      "price": "$11"
-    },
-    {
-      "name": "Three-Cheese Mini Macs",
-      "price": "$7"
-    },
-    {
-      "name": "Orange-Glazed Meatballs",
-      "price": "$10"
-    },
-    {
-      "name": "Curried Coronation Chicken Salad",
       "price": "$10"
     }
   ]

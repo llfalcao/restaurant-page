@@ -1,9 +1,13 @@
-const MenuCategory = function (title, type, image, className) {
+// Creates category container with desired class(es)
+const MenuCategory = function (title, type, image, classNames) {
   const category = document.createElement('div');
   category.classList.add('category');
-
-  if (className) {
-    category.classList.add(className);
+  if (classNames != null) {
+    if (typeof classNames === 'object') {
+      category.classList.add(...classNames);
+    } else {
+      category.classList.add(classNames);
+    }
   }
 
   const categoryImage = new Image();
@@ -16,22 +20,21 @@ const MenuCategory = function (title, type, image, className) {
   const categoryTitle = document.createElement('h2');
   categoryTitle.innerText = title;
 
+  const overlay = document.createElement('div');
+  overlay.classList.add('text-overlay');
+  overlay.appendChild(categoryTitle);
+  imageWrapper.appendChild(overlay);
+
   const dishes = document.createElement('div');
   dishes.classList.add('dishes');
-  dishes.appendChild(categoryTitle);
 
   const items = type[Object.keys(type)[0]];
-
   for (let dish in items) {
     const menuItemWrapper = document.createElement('div');
-    const name = document.createElement('span');
-    const price = document.createElement('span');
-
     menuItemWrapper.classList.add('menu-item-wrapper');
-    name.classList.add('food-name');
-    name.classList.add('food-price');
-
+    const name = document.createElement('span');
     name.innerText = items[dish].name;
+    const price = document.createElement('span');
     price.innerText = items[dish].price;
 
     menuItemWrapper.appendChild(name);

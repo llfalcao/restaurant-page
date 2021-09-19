@@ -1,0 +1,32 @@
+{
+  "beverages": [
+    {
+      "name": "Mineral Water (20oz)",
+      "price": "$1.20"
+    },
+    {
+      "name": "Coca-Cola (12oz)",
+      "price": "$1.50"
+    },
+    {
+      "name": "Espresso",
+      "price": "$1.50"
+    },
+    {
+      "name": "Capuccino",
+      "price": "$2.00"
+    },
+    {
+      "name": "Beer",
+      "price": "$3.00"
+    },
+    {
+      "name": "Sauvignon Blanc",
+      "price": "$18"
+    },
+    {
+      "name": "Cabernet Sauvignon",
+      "price": "$20"
+    }
+  ]
+}

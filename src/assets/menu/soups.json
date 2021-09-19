@@ -1,7 +1,15 @@
 {
   "soups": [
     {
+      "name": "Pumpkin Tortilla Soup",
+      "price": "$13"
+    },
+    {
       "name": "Chicken Soup with Pasta and Spinach",
+      "price": "$14"
+    },
+    {
+      "name": "Vegetarian Pho",
       "price": "$14"
     },
     {
@@ -11,14 +19,6 @@
     {
       "name": "Thai Shrimp Soup",
       "price": "$16"
-    },
-    {
-      "name": "Pumpkin Tortilla Soup",
-      "price": "$13"
-    },
-    {
-      "name": "Vegetarian Pho",
-      "price": "$14"
     }
   ]
 }
