@@ -11,10 +11,12 @@ module.exports = {
     rules: [
       {
         test: /\.s[ac]ss$/i,
+        exclude: /node_modules/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        exclude: /node_modules/,
         type: 'asset/resource',
       },
     ],

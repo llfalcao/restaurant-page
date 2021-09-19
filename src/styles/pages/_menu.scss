@@ -79,10 +79,18 @@
     display: flex;
     justify-content: space-between;
     padding: 0.25rem 0.5rem 0.25rem 0;
+    white-space: nowrap;
   }
 
   & span {
     font-size: 0.9rem;
+  }
+
+  & .separator {
+    width: 100%;
+    border-bottom: 2px dotted $dark-background;
+    margin: 0 0.5rem;
+    opacity: 0.2;
   }
 }
 

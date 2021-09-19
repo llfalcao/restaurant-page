@@ -30,14 +30,19 @@ const MenuCategory = function (title, type, image, classNames) {
 
   const items = type[Object.keys(type)[0]];
   for (let dish in items) {
-    const menuItemWrapper = document.createElement('div');
-    menuItemWrapper.classList.add('menu-item-wrapper');
     const name = document.createElement('span');
     name.innerText = items[dish].name;
+
+    const separator = document.createElement('span');
+    separator.classList.add('separator');
+
     const price = document.createElement('span');
     price.innerText = items[dish].price;
 
+    const menuItemWrapper = document.createElement('div');
+    menuItemWrapper.classList.add('menu-item-wrapper');
     menuItemWrapper.appendChild(name);
+    menuItemWrapper.appendChild(separator);
     menuItemWrapper.appendChild(price);
     dishes.appendChild(menuItemWrapper);
   }
