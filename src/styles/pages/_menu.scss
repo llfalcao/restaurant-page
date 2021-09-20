@@ -28,14 +28,14 @@
 
     & h1 {
       color: $white-foreground;
-      text-shadow: $text-shadow-img, 0 0 10px #000;
+      text-shadow: $text-shadow-img;
       font-size: 2rem;
       font-weight: 400;
     }
 
     & p {
       color: $white-foreground;
-      text-shadow: $text-shadow-img, 0 0 10px #000;
+      text-shadow: $text-shadow-img;
       font-size: 1rem;
       font-weight: 300;
     }

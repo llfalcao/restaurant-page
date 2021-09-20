@@ -10,16 +10,16 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 0.5rem;
+  // border-radius: 0.5rem;
 
   & h1 {
     color: $white-foreground;
-    text-shadow: $text-shadow-img, 0 0 4px #111;
+    text-shadow: $text-shadow-img;
     text-align: right;
     font-size: 4.5rem;
     font-weight: 400;
     max-width: 400px;
-    animation: slide 1s forwards;
+    animation: slide $slow-transition forwards;
     position: relative;
   }
 
@@ -30,9 +30,9 @@
     right: 0;
     font-size: 1.2rem;
     font-weight: 300;
-    text-shadow: $text-shadow-img, 0 0 5px #111;
-    transition: 1s;
-    animation: slide-after 1s ease-in;
+    text-shadow: $text-shadow-img;
+    transition: $slow-transition;
+    animation: slide-after $slow-transition ease-in;
   }
 }
 
