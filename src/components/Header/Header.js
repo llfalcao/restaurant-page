@@ -1,7 +1,4 @@
 const Header = function () {
-  const header = document.createElement('div');
-  header.id = 'header';
-
   const company = document.createElement('div');
   company.classList.add('company');
 
@@ -24,6 +21,8 @@ const Header = function () {
     </ul>
   `;
 
+  const header = document.createElement('div');
+  header.id = 'header';
   header.appendChild(company);
   header.insertAdjacentHTML('beforeend', navbar);
 

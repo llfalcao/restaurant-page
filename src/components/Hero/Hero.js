@@ -11,13 +11,13 @@ const Hero = function () {
   tagline.innerText = 'Cooked to perfection';
 
   const imageCredits = `
-      <span class="credits">
-        Photo by
-        <a href="https://unsplash.com/photos/bpPTlXWTOvg" alt="Caroline Attwood" target="_blank">
-          Caroline Attwood</a>
-        on
-        <a href="https://unsplash.com" alt="Unsplash" target="_blank">Unsplash</a>
-      </span>
+    <span class="credits">
+      Photo by
+      <a href="https://unsplash.com/photos/bpPTlXWTOvg" alt="Caroline Attwood" target="_blank">
+        Caroline Attwood</a>
+      on
+      <a href="https://unsplash.com" alt="Unsplash" target="_blank">Unsplash</a>
+    </span>
   `;
 
   const hero = document.createElement('div');

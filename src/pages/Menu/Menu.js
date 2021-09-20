@@ -18,13 +18,13 @@ const Menu = function () {
   banner.classList.add('menu-banner');
 
   const bannerCredits = `
-      <span class="credits">
-        Photo by
-        <a href="https://unsplash.com/photos/LNn6O_Mt730" alt="Rumman Amin" target="_blank">
-          Rumman Amin</a>
-        on
-        <a href="https://unsplash.com" alt="Unsplash" target="_blank">Unsplash</a>
-      </span>
+    <span class="credits">
+      Photo by
+      <a href="https://unsplash.com/photos/LNn6O_Mt730" alt="Rumman Amin" target="_blank">
+        Rumman Amin</a>
+      on
+      <a href="https://unsplash.com" alt="Unsplash" target="_blank">Unsplash</a>
+    </span>
   `;
 
   const bannerText = `
@@ -50,8 +50,12 @@ const Menu = function () {
   menuLeft.appendChild(
     MenuCategory(authorInfo.appetizers, appetizers, appetizerImage)
   );
-  menuLeft.appendChild(MenuCategory(authorInfo.salads, salads, saladImage));
-  menuLeft.appendChild(MenuCategory(authorInfo.soups, soups, soupImage));
+  menuLeft.appendChild(
+    MenuCategory(authorInfo.salads, salads, saladImage)
+  );
+  menuLeft.appendChild(
+    MenuCategory(authorInfo.soups, soups, soupImage)
+  );
   menuRight.appendChild(
     MenuCategory(authorInfo.specials, specials, specialImage, 'menu-specials')
   );

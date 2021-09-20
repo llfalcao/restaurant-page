@@ -14,7 +14,7 @@ const Footer = function () {
     </div>
     <div class="location">
       <p>Pieta</p>
-      <p>49 Alphonse St.</p>
+      <p>47 Alphonse St.</p>
       <p>Org. Island 32149-125</p>
     </div>
   `;

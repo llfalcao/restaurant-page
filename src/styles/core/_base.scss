@@ -15,29 +15,16 @@ body {
   color: $dark-foreground;
   font-family: $font-family-sans, $font-family-system;
   width: 100%;
-}
-
-input,
-textarea {
-  padding: 0.5rem;
-  border: 1px solid rgba($blue, 0.5);
-  font-family: $font-family-sans;
-}
-
-input:focus,
-textarea:focus {
-  outline: none;
-  border: 1px solid $orange;
-}
-
-button {
-  padding: 0.5rem;
-  font-family: $font-family-sans;
+  background: linear-gradient(to right, #171d21, #273038, #171d21);
+  min-height: 100vh;
 }
 
 #content {
+  background-color: $light-background;
+  box-shadow: 0 10px 10px #000, 0 10px 10px #000;
+
   @media (min-width: 1200px) {
-    max-width: 1920px;
+    max-width: 2560px;
     margin: auto;
   }
 }

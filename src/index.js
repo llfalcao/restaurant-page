@@ -6,24 +6,22 @@ import Footer from './components/Footer';
 import './styles/app.scss';
 
 const content = document.querySelector('#content');
-
-content.appendChild(Header());
+content.insertAdjacentElement('beforebegin', Header());
 content.appendChild(Home());
-content.appendChild(Footer());
+content.insertAdjacentElement('afterend', Footer());
 
 // Load section according to the selected tab
 function loadSection(navbarLink) {
-  const header = document.querySelector('#header');
   const indicator = document.querySelector('.indicator');
 
   if (navbarLink === 'Menu') {
-    header.insertAdjacentElement('afterend', Menu());
+    content.insertAdjacentElement('afterbegin', Menu());
     indicator.style.transform = 'translateX(0px)';
   } else if (navbarLink === 'Contact') {
-    header.insertAdjacentElement('afterend', Contact());
+    content.insertAdjacentElement('afterbegin', Contact());
     indicator.style.transform = 'translateX(150px)';
   } else if (navbarLink === 'Home') {
-    header.insertAdjacentElement('afterend', Home());
+    content.insertAdjacentElement('afterbegin', Home());
     indicator.style.transform = 'translateX(-150px)';
   }
 }

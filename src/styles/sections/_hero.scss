@@ -1,6 +1,6 @@
 .hero {
   width: 100%;
-  height: 450px;
+  height: 600px;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -61,5 +61,11 @@
 @media (min-width: 1440px) {
   .hero {
     background-position: left 40%;
+  }
+}
+
+@media (max-width: 1360px) {
+  .hero {
+    height: calc(100vh - 112px);
   }
 }

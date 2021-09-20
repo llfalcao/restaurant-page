@@ -1,5 +1,7 @@
 #menu {
   padding: 0 2rem 2rem 2rem;
+  // Subtracting height from header and footer
+  min-height: calc(100vh - 112px - 150px);
 
   & .banner-wrapper {
     display: block;

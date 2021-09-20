@@ -1,0 +1,28 @@
+label {
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  border: 1px solid rgba($blue, 0.5);
+  font-family: $font-family-sans;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid $orange;
+}
+
+input,
+textarea,
+button {
+  transition: $fast-transition;
+}
+
+textarea {
+  margin-bottom: 1rem;
+  max-width: 100%;
+}
