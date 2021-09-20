@@ -21,13 +21,18 @@ const Footer = function () {
 
   const contactInfo = `
     <div class="contact-info">
-      <p>Email: contact@plateholder.com</p>
+      <p>Email: contact@reserved.com</p>
       <p>Phone: +3-71121-2051</p>
     </div>
   `;
 
   const githubInfo = `
-    <a class="github-info" href="https://github.com/llfalcao" alt="GitHub - llfalcao">
+    <a
+      class="github-info"
+      href="https://github.com/llfalcao"
+      target="_blank"
+      alt="GitHub - llfalcao"
+    >
       <figure>
         <img src="${githubLogo}" alt="GitHub Logo" />
       </figure>
