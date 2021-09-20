@@ -34,7 +34,7 @@
 
   & .image-wrapper {
     position: absolute;
-    width: 40%;
+    width: 250px;
     height: 150px;
     top: -1rem;
     left: -1rem;
@@ -72,8 +72,8 @@
   }
 
   & .dishes {
-    width: 100%;
-    margin-left: 40%;
+    width: calc(100% - 240px);
+    margin-left: auto;
   }
 
   & .menu-item-wrapper {
