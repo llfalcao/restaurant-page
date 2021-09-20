@@ -17,9 +17,11 @@
     text-align: right;
     font-size: 4.5rem;
     font-weight: 400;
-    max-width: 400px;
+    width: 400px;
     animation: slide $slow-transition forwards;
     position: relative;
+    margin-left: 10%;
+    transform: translateX(-10%);
   }
 
   & h1::after {
@@ -61,6 +63,11 @@
 @media (min-width: 1440px) {
   .hero {
     background-position: left 40%;
+
+    & h1 {
+      font-size: 6.5rem;
+      width: 500px;
+    }
   }
 }
 
