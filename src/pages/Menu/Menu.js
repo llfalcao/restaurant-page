@@ -29,7 +29,7 @@ const Menu = function () {
 
   const bannerText = `
     <h1>Check out our new menu!</h1>
-    <p>We've got a variety of options for you</p>
+    <p>Fresh ingredients, weekly specials, and more</p>
   `;
 
   const overlay = document.createElement('div');
@@ -50,12 +50,8 @@ const Menu = function () {
   menuLeft.appendChild(
     MenuCategory(authorInfo.appetizers, appetizers, appetizerImage)
   );
-  menuLeft.appendChild(
-    MenuCategory(authorInfo.salads, salads, saladImage)
-  );
-  menuLeft.appendChild(
-    MenuCategory(authorInfo.soups, soups, soupImage)
-  );
+  menuLeft.appendChild(MenuCategory(authorInfo.salads, salads, saladImage));
+  menuLeft.appendChild(MenuCategory(authorInfo.soups, soups, soupImage));
   menuRight.appendChild(
     MenuCategory(authorInfo.specials, specials, specialImage, 'menu-specials')
   );

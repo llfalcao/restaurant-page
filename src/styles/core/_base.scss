@@ -19,16 +19,6 @@ body {
   min-height: 100vh;
 }
 
-#content {
-  background-color: $light-background;
-  box-shadow: 0 10px 10px #000, 0 10px 10px #000;
-
-  @media (min-width: 1200px) {
-    max-width: 2560px;
-    margin: auto;
-  }
-}
-
 .overlay {
   position: absolute;
   top: 0;

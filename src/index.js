@@ -11,18 +11,30 @@ content.appendChild(Home());
 content.insertAdjacentElement('afterend', Footer());
 
 // Load section according to the selected tab
-function loadSection(navbarLink) {
-  const indicator = document.querySelector('.indicator');
+function loadSection(navbarLink, offset) {
+  let animation;
+  if (offset < 0) {
+    animation = 'enter-from-left';
+  } else {
+    animation = 'enter-from-right';
+  }
 
-  if (navbarLink === 'Menu') {
+  const indicator = document.querySelector('.indicator');
+  if (navbarLink === 'menu') {
     content.insertAdjacentElement('afterbegin', Menu());
     indicator.style.transform = 'translateX(0px)';
-  } else if (navbarLink === 'Contact') {
+    const menu = document.querySelector('#menu');
+    menu.style.animation = `${animation} 0.3s`;
+  } else if (navbarLink === 'contact') {
     content.insertAdjacentElement('afterbegin', Contact());
     indicator.style.transform = 'translateX(150px)';
-  } else if (navbarLink === 'Home') {
+    const contact = document.querySelector('#contact');
+    contact.style.animation = `${animation} 0.3s`;
+  } else if (navbarLink === 'home') {
     content.insertAdjacentElement('afterbegin', Home());
     indicator.style.transform = 'translateX(-150px)';
+    const home = document.querySelector('#home');
+    home.style.animation = `${animation} 0.3s`;
   }
 }
 
@@ -31,16 +43,16 @@ function loadSection(navbarLink) {
 const navItem = document.querySelectorAll('#header a');
 navItem.forEach((item) => {
   item.addEventListener('click', function () {
-    let currentTab = document.querySelectorAll('.active');
-    if (currentTab[0] === item) return;
-    let currentSection = document.querySelector(
-      '#' + currentTab[0].dataset.page
-    );
-    currentTab[0].classList.remove('active');
-    if (currentSection !== null) {
-      currentSection.remove();
+    let activeTab = document.querySelectorAll('.active');
+    if (activeTab[0] === item) return;
+
+    let activePage = document.querySelector(`#${activeTab[0].dataset.page}`);
+    if (activePage !== null) {
+      activePage.remove();
     }
+    activeTab[0].classList.remove('active');
     item.classList.add('active');
-    loadSection(item.innerText);
+    const offset = item.dataset.tab - activeTab[0].dataset.tab;
+    loadSection(item.dataset.page, offset);
   });
 });

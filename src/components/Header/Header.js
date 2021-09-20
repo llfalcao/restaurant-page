@@ -15,9 +15,15 @@ const Header = function () {
   const navbar = `
     <ul class="navbar">
       <div class="indicator"></div>
-      <li><a class="active" href="#" data-page="home" alt="Home">Home</a></li>
-      <li><a href="#" data-page="menu" alt="Menu">Menu</a></li>
-      <li><a href="#" data-page="contact" alt="Contact">Contact</a></li>
+      <li>
+        <a href="#" data-page="home" data-tab="0" class="active" alt="Home">Home</a>
+      </li>
+      <li>
+        <a href="#" data-page="menu" data-tab="1" alt="Menu">Menu</a>
+      </li>
+      <li>
+        <a href="#" data-page="contact" data-tab="2" alt="Contact">Contact</a>
+      </li>
     </ul>
   `;
 

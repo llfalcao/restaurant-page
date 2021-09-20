@@ -1,8 +1,6 @@
-import restaurant from '../../assets/images/shawnanggg-restaurant.jpg';
-
 const Contact = function () {
-  const image = document.createElement('div');
-  image.classList.add('bg');
+  const overlay = document.createElement('div');
+  overlay.classList.add('contact--overlay');
 
   const imageCredits = `
       <span class="credits">
@@ -47,7 +45,7 @@ const Contact = function () {
 
   const contact = document.createElement('div');
   contact.id = 'contact';
-  contact.appendChild(image);
+  contact.appendChild(overlay);
   contact.insertAdjacentHTML('beforeend', imageCredits);
   contact.insertAdjacentHTML('beforeend', textContent);
   contact.appendChild(form);
