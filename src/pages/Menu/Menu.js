@@ -28,8 +28,8 @@ const Menu = function () {
   `;
 
   const bannerText = `
-    <h1>You're in for a treat!</h1>
-    <p>Check out some of our options</p>
+    <h1>Check out our new menu!</h1>
+    <p>We've got a variety of options for you</p>
   `;
 
   const overlay = document.createElement('div');

@@ -1,0 +1,46 @@
+#footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: $dark-background;
+  color: $white-foreground;
+  height: 150px;
+
+  & .footer-logo {
+    width: 100px;
+  }
+
+  & .location {
+    & p {
+      margin: 0.5rem 0;
+      font-size: 0.9rem;
+    }
+
+    & p:first-child {
+      font-weight: 500;
+      font-size: 1rem;
+    }
+  }
+
+  & .contact-info {
+    & p {
+      margin: 0.5rem 0;
+    }
+  }
+
+  & .github-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    & img {
+      width: 40px;
+    }
+
+    & span {
+      font-family: $font-family-mono;
+      font-weight: 600;
+    }
+  }
+}
