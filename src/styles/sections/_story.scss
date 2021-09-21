@@ -24,6 +24,7 @@
 
   & .figure {
     width: 50%;
+    height: 300px;
     position: relative;
 
     & img {
@@ -46,7 +47,7 @@
     gap: 1rem;
 
     & .story--text-content,
-    img {
+    .figure {
       width: 100%;
     }
   }
