@@ -2,9 +2,12 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
   background-color: $dark-background;
   color: $white-foreground;
-  height: 150px;
+  min-height: 150px;
+  padding: 1rem;
+  gap: 1rem;
 
   & .footer-logo {
     width: 100px;
