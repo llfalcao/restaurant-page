@@ -1,5 +1,5 @@
 #menu {
-  padding: 0 2rem 2rem 2rem;
+  padding: 1rem 2rem 2rem 2rem;
   // Subtracting height from header and footer
   min-height: calc(100vh - 112px - 150px);
 
@@ -40,6 +40,36 @@
       text-shadow: $text-shadow-img;
       font-size: 1rem;
       font-weight: 400;
+    }
+  }
+}
+
+@media (max-width: 1030px) {
+  #menu {
+    & .overlay {
+      background: transparent;
+
+      & h1 {
+        color: $blue-10;
+        text-shadow: unset;
+      }
+
+      & p {
+        color: $dark-foreground;
+        text-shadow: unset;
+      }
+    }
+
+    & .banner-wrapper {
+      height: 70px;
+
+      & .menu-banner {
+        display: none;
+      }
+
+      & .credits {
+        display: none;
+      }
     }
   }
 }
