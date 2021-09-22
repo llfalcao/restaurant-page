@@ -73,3 +73,20 @@
     }
   }
 }
+
+@media (max-width: 450px) {
+  #menu {
+    & .banner-wrapper {
+      height: 120px;
+
+      & h1 {
+        font-size: 10vw;
+        text-align: center;
+      }
+
+      & p {
+        text-align: center;
+      }
+    }
+  }
+}

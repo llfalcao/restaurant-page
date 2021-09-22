@@ -168,3 +168,32 @@
     border-top-right-radius: unset;
   }
 }
+
+@media (max-width: 450px) {
+  .menu-section:last-child {
+    padding-bottom: 2rem;
+  }
+
+  #menu {
+    & .category {
+      padding: 0.5rem 0 0.5rem 0.5rem;
+    }
+
+    & .image-wrapper {
+      width: 100%;
+      left: 0;
+      height: 100px;
+    }
+
+    & .dishes {
+      width: 100%;
+      margin-top: 110px;
+    }
+  }
+
+  #specials {
+    & .dishes {
+      margin-top: 0;
+    }
+  }
+}
