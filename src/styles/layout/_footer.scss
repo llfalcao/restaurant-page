@@ -9,8 +9,12 @@
   padding: 1rem;
   gap: 1rem;
 
-  & .footer-logo {
-    width: 100px;
+  .footer-logo {
+    & img {
+      display: block;
+      margin: auto;
+      width: 100px;
+    }
   }
 
   & .location {
@@ -44,6 +48,14 @@
     & span {
       font-family: $font-family-mono;
       font-weight: 600;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  #footer {
+    & .footer-logo {
+      width: 100%;
     }
   }
 }
