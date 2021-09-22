@@ -27,12 +27,12 @@ function loadSection(navbarLink, offset) {
     menu.style.animation = `${animation} 0.3s`;
   } else if (navbarLink === 'contact') {
     content.insertAdjacentElement('afterbegin', Contact());
-    indicator.style.transform = 'translateX(150px)';
+    indicator.style.transform = 'translateX(100%)';
     const contact = document.querySelector('#contact');
     contact.style.animation = `${animation} 0.3s`;
   } else if (navbarLink === 'home') {
     content.insertAdjacentElement('afterbegin', Home());
-    indicator.style.transform = 'translateX(-150px)';
+    indicator.style.transform = 'translateX(-100%)';
     const home = document.querySelector('#home');
     home.style.animation = `${animation} 0.3s`;
   }

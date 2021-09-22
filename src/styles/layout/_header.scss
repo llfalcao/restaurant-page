@@ -50,7 +50,16 @@
     width: 150px;
     height: 0.25rem;
     background-color: $orange;
-    transform: translateX(-150px);
+    transform: translateX(-100%);
     transition: $fast-transition;
+  }
+}
+
+@media (max-width: 450px) {
+  .navbar {
+    & a,
+    .indicator {
+      width: 75px;
+    }
   }
 }
