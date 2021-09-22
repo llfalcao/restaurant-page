@@ -66,3 +66,26 @@
     }
   }
 }
+
+@media (max-width: 1000px) {
+  #contact {
+    flex-wrap: wrap;
+
+    & .text-content {
+      transform: unset;
+
+      & h1 {
+        text-align: center;
+      }
+
+      & h2 {
+        margin: auto;
+        text-align: center;
+      }
+    }
+
+    & .form {
+      margin-bottom: 2rem;
+    }
+  }
+}
